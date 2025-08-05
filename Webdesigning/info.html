@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Information Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            padding: 0 200px;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 2px 1px 8px #eee;
+            background: #fff;
+        }
+        .navbar img {
+            padding: 10px 0;
+        }
+        .nav-links {
+            display: flex;
+            gap: 10px;
+        }
+        .nav-links a, .nav-links div {
+            padding: 20px;
+            color: #387ed1;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav-links a:hover, .nav-links div:hover {
+            background: #387ed1;
+            color: #fff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(56,126,209,0.08);
+            padding: 40px 50px;
+        }
+        h1 {
+            font-size: 56px;
+            color: #387ed1;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        h3 {
+            font-size: 32px;
+            color: #222;
+            margin-top: 0;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+        .section-title {
+            font-size: 28px;
+            color: #387ed1;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 22px;
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+        ul {
+            font-size: 22px;
+            color: #444;
+            margin-bottom: 24px;
+        }
+        .contact-group {
+            margin-top: 32px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+        .contact {
+            display: inline-flex;
+            align-items: center;
+            padding: 14px 28px 14px 18px;
+            border-radius: 8px;
+            font-size: 22px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid transparent;
+            box-shadow: 0 2px 8px rgba(56,126,209,0.08);
+            transition: box-shadow 0.2s, border 0.2s, background 0.2s, color 0.2s;
+            background: #fff;
+        }
+        .contact img {
+            width: 28px;
+            height: 28px;
+            margin-right: 12px;
+            border-radius: 50%;
+            background: #fff;
+            padding: 2px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+        }
+        /* Brand-specific styles */
+        .contact.gmail {
+            color: #EA4335;
+            border-color: #EA4335;
+        }
+        .contact.gmail:hover {
+            background: #EA4335;
+            color: #fff;
+        }
+        .contact.gmail:hover img {
+            background: #fff;
+        }
+        .contact.whatsapp {
+            color: #25D366;
+            border-color: #25D366;
+        }
+        .contact.whatsapp:hover {
+            background: #25D366;
+            color: #fff;
+        }
+        .contact.facebook {
+            color: #4267B2;
+            border-color: #4267B2;
+        }
+        .contact.facebook:hover {
+            background: #4267B2;
+            color: #fff;
+        }
+        .contact.instagram {
+            color: #E1306C;
+            border-color: #E1306C;
+        }
+        .contact.instagram:hover {
+            background: #E1306C;
+            color: #fff;
+        }
+        .contact:hover img {
+            background: #fff;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 20px;
+            color: #387ed1;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .back-link:hover {
+            color: #265a8a;
+            text-decoration: underline;
+        }
+        @media (max-width: 700px) {
+            .navbar, .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .container {
+                padding: 20px 10px;
+            }
+            h1 { font-size: 36px; }
+            h3, .section-title { font-size: 22px; }
+            p, ul { font-size: 16px; }
+            .contact-group {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .contact {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="shiva logo.jpg" width="80" height="80" alt="Shiva Logo">
+        <div class="nav-links">
+            <a href="info.html">About</a>
+            <div>Signup</div>
+            <div>Buy</div>
+            <div>Sell</div>
+            <div>Support</div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Shiva Enterprises</h1>
+        <h3>🏡 Your Trusted Property Expert – Making Real Estate Simple!</h3>
+        <p>
+            Looking to buy or sell property? You're in the right place!<br>
+            I’m a dedicated and reliable Property Dealer, specializing in buying and selling residential, commercial, and investment properties.
+            With a strong network, deep market knowledge, and a passion for real estate, I help clients make smart decisions—whether you’re looking for your dream home,
+            selling for the best price, or investing for the future.
+        </p>
+        <div class="section-title">🔑 What I Offer:</div>
+        <ul>
+            <li>Transparent and smooth transactions</li>
+            <li>Quick property deals at the right market value</li>
+            <li>Expert advice and personalized service</li>
+            <li>Access to prime listings and buyers</li>
+        </ul>
+        <p>
+            Whether you’re a first-time buyer, an experienced investor, or ready to sell, I’m here to guide you every step of the way.
+        </p>
+        <div class="section-title">📞 Let’s turn your property goals into reality. Contact me today!</div>
+        <div class="contact-group">
+            <a class="contact gmail" href="https://mail.google.com/mail/?view=cm&to=cvaent2106@gmail.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail">
+                Gmail
+            </a>
+            <a class="contact whatsapp" href="https://wa.me/919955980266" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+                WhatsApp
+            </a>
+            <a class="contact facebook" href="https://www.facebook.com/cvaent?mibextid=ZbWKwL" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+                Facebook
+            </a>
+            <a class="contact instagram" href="https://www.instagram.com/cva_enterprises?igsh=YWhwZmtvMzVjNno2" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+                Instagram
+            </a>
+        </div>
+        <a class="back-link" href="civa.html">← Back to Home</a>
+    </div>
+</body>
+</html>
